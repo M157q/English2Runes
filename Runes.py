@@ -41,6 +41,7 @@ def main():
         else:
             print('File not exists!')
             sys.exit(1)
+
     if sys.argv[1] == '-e':
         d = s.lower()
         for i in e2r_table:
@@ -53,9 +54,10 @@ def main():
 
     print(d)
 
+
 if __name__ == "__main__":
-    #print(sys.argv)
     arguments = ('-e', '-d')
+
     if len(sys.argv) < 2:
         print(help_message)
     elif sys.argv[1] not in arguments:
