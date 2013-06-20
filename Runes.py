@@ -39,7 +39,7 @@ def main():
             s = f.read()
             f.close()
         else:
-            print('File not exists!')
+            print('File "' + sys.argv[2] + '" not exists!')
             sys.exit(1)
 
     if sys.argv[1] == '-e':
@@ -58,7 +58,7 @@ def main():
 if __name__ == "__main__":
     arguments = ('-e', '-d')
 
-    if len(sys.argv) < 2:
+    if len(sys.argv) not in range(2, 4):
         print(help_message)
     elif sys.argv[1] not in arguments:
         print('you used wrong argument.')
