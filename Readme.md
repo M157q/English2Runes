@@ -1,23 +1,26 @@
-English to Runes
+English to Runes  ᛖᚾᚷᛚᛁᛋᚻ ᛏᛟ ᚱᚢᚾᛖᛋ 
 ======================
-A command line tool to switch English letters to Runes letters or vice versa.  
+A command line tool to switch English letters to [Runes letters][Runes] or vice versa.  
 Written in Python3.  
 I just a newbie in Python, so the code is rookie-like.  
 
-[Usage]
+[Runes]: http://en.wikipedia.org/wiki/Runes
+
+Usage  ᚢᛋᚨᚷᛖ
 ------
-    $python3 Runes.py -e|-d [file]                                                 
+    $python3 Runes.py -e|-d [file]      
          -e: English to Runes                                                                          
          -d: Runes to English                                                                          
-         use stdin when no file input 
+         use stdin when no file input   
 
-[Screenshot]
+
+Screenshot   ᛋᚳᚱᛖᛖᚾᛋᚻᛟᛏ  
 --------     
 ![1](http://i.imgur.com/u2r07ww.jpg)
 
 
 
-[License]
+License  ᛚᛁᚳᛖᚾᛋᛖ
 ----------
 Copyright &copy; 2013 m157q  
 Licensed under the [GPL license][GPL].
