@@ -1,8 +1,8 @@
 English to Runes
 ======================
-A command line tool to switch English letters to Runes letters or vice versa.
-Written in Python3.
-I just a newbie in Python, so the code is rookie-like.
+A command line tool to switch English letters to Runes letters or vice versa.  
+Written in Python3.  
+I just a newbie in Python, so the code is rookie-like.  
 
 [Usage]
 ------
@@ -17,7 +17,7 @@ I just a newbie in Python, so the code is rookie-like.
 
 
 
-[Liscense]
+[License]
 ----------
 Copyright &copy; 2013 m157q  
 Licensed under the [GPL license][GPL].
