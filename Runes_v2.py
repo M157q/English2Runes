@@ -30,11 +30,12 @@ def main():
 
     if sys.argv[1] == '-e':
         d = s.lower()
+        print(d.translate(str.maketrans(intab, outtab)))
 
     if sys.argv[1] == '-d':
         d = s
+        print(d.translate(str.maketrans(outtab, intab)))
 
-    print(d.translate(str.maketrans(intab, outtab)))
 
 
 if __name__ == "__main__":
