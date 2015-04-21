@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
+
 import sys
 import os.path
 import string
 
-intab   = string.ascii_lowercase
-outtab  = "ᚨᛒᚳᛞᛖᚠᚷᚻᛁᛃᚲᛚᛗᚾᛟᛈᛩᚱᛋᛏᚢᚡᚹᛪᚣᛉ"
+intab = string.ascii_lowercase
+outtab = "ᚨᛒᚳᛞᛖᚠᚷᚻᛁᛃᚲᛚᛗᚾᛟᛈᛩᚱᛋᛏᚢᚡᚹᛪᚣᛉ"
 
-help_message = \
-'''
+help_message = '''
 [Usage] $python3 ''' + sys.argv[0] + ''' -e|-d [file]
         -e: English to Runes
         -d: Runes to English
         use stdin when no file input
 '''
+
 
 def main():
     try:
@@ -35,7 +36,6 @@ def main():
     if sys.argv[1] == '-d':
         d = s
         print(d.translate(str.maketrans(outtab, intab)))
-
 
 
 if __name__ == "__main__":
