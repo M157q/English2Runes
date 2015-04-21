@@ -8,10 +8,12 @@ intab = string.ascii_lowercase
 outtab = "ᚨᛒᚳᛞᛖᚠᚷᚻᛁᛃᚲᛚᛗᚾᛟᛈᛩᚱᛋᛏᚢᚡᚹᛪᚣᛉ"
 
 help_message = '''
-[Usage] $python3 ''' + sys.argv[0] + ''' -e|-d [file]
-        -e: English to Runes
-        -d: Runes to English
-        use stdin when no file input
+[Usage] $python3 ''' + sys.argv[0] + ''' -e | -d [file]
+
+    -e: English to Runes
+    -d: Runes to English
+
+    Use stdin when no file be specified.
 '''
 
 
