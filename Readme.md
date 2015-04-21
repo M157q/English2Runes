@@ -29,7 +29,7 @@ $ echo "English to Runes" | python3 runes.py -e | python3 runes.py -d
 ```
 Runes letters are case-insensitive, so I only trans Runes letters to English letters in lowecase.
 
-`$ python3 runes.py -e Readme.md > Readme_Runes.md`
+`$ python3 runes.py -e Readme.md > Readme_Runes.md`  
 Generated [this markdown file](examples/Readme_Runes.md) which is this readme in Runes version.
 
 
