@@ -2,7 +2,7 @@ English to Runes  ᛖᚾᚷᛚᛁᛋᚻ ᛏᛟ ᚱᚢᚾᛖᛋ
 ======================
 A command line tool to switch English letters to [Runes letters][Runes] or vice versa.  
 Written in Python3.  
-I just a newbie in Python, so the code is rookie-like.  
+I am just a Python newbie, so the code is rookie-like.  
 
 [Runes]: http://en.wikipedia.org/wiki/Runes
 
