@@ -8,10 +8,29 @@ I just a newbie in Python, so the code is rookie-like.
 
 Usage  ᚢᛋᚨᚷᛖ
 ------
-    $python3 Runes.py -e|-d [file]      
-         -e: English to Runes                                                                          
-         -d: Runes to English                                                                          
-         use stdin when no file input   
+
+```
+$python3 runes.py -e|-d [file]
+
+     -e: English to Runes
+     -d: Runes to English
+
+    Use stdin when no file be specified.
+```
+
+```
+$ echo "English to Runes" | python3 runes.py -e
+> ᛖᚾᚷᛚᛁᛋᚻ ᛏᛟ ᚱᚢᚾᛖᛋ
+```
+
+```
+$ echo "English to Runes" | python3 runes.py -e | python3 runes.py -d
+> english to runes
+```
+Runes letters are case-insensitive, so I only trans Runes letters to English letters in lowecase.
+
+`$ python3 runes.py -e Readme.md > Readme_Runes.md`
+Generated [this markdown file](examples/Readme_Runes.md) which is this readme in Runes version.
 
 
 Screenshot   ᛋᚳᚱᛖᛖᚾᛋᚻᛟᛏ  
