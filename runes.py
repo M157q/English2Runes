@@ -17,11 +17,22 @@ help_message = '''
 '''
 
 
+def encode(s: str) -> str:
+    return s.lower().translate(str.maketrans(intab, outtab))
+
+
+def decode(s: str) -> str:
+    return s.translate(str.maketrans(outtab, intab))
+
+
 def main():
     try:
         sys.argv[2]
     except IndexError:
-        s = input()
+        try:
+            s = input()
+        except (KeyboardInterrupt, EOFError):
+            exit()
     else:
         if os.path.exists(sys.argv[2]):
             f = open(sys.argv[2], 'r')
@@ -32,12 +43,9 @@ def main():
             sys.exit(1)
 
     if sys.argv[1] == '-e':
-        d = s.lower()
-        print(d.translate(str.maketrans(intab, outtab)))
-
-    if sys.argv[1] == '-d':
-        d = s
-        print(d.translate(str.maketrans(outtab, intab)))
+        print(encode(s))
+    elif sys.argv[1] == '-d':
+        print(decode(s))
 
 
 if __name__ == "__main__":
@@ -49,4 +57,5 @@ if __name__ == "__main__":
         print('you used wrong argument.')
         print(help_message)
     else:
-        main()
+        while True:
+            main()
